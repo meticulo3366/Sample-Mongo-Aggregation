@@ -1,2 +1,256 @@
 MongoDB shell version: 2.6.6
 connecting to: localhost:27017/agency-node-usdoa
+{
+	"_firstBatch" : [
+		{
+			"_id" : {
+				"url" : [
+					"http://www.elsevier.com/tdm/userlicense/1.0/"
+				]
+			},
+			"DOIs" : [
+				"10.1016/j.funbio.2014.09.001",
+				"10.1016/j.vaccine.2014.02.066",
+				"10.1016/j.biortech.2014.04.102",
+				"10.1016/j.plantsci.2014.09.009",
+				"10.1016/j.fm.2014.07.023",
+				"10.1016/j.jaap.2014.08.006",
+				"10.1016/j.foodchem.2014.08.087",
+				"10.1016/j.pmpp.2014.07.001",
+				"10.1016/j.geoderma.2014.09.008",
+				"10.1016/j.apcata.2014.07.018",
+				"10.1016/j.biortech.2014.07.020",
+				"10.1016/j.biortech.2014.06.092",
+				"10.1016/j.rse.2013.04.005",
+				"10.1016/j.jaap.2014.08.004",
+				"10.1016/j.enconman.2014.06.084",
+				"10.1016/j.vetimm.2014.07.009",
+				"10.1016/j.landurbplan.2014.10.002",
+				"10.1016/j.virol.2014.07.003",
+				"10.1016/j.virusres.2014.09.007",
+				"10.1016/j.jpba.2014.07.039",
+				"10.1016/j.bej.2014.11.011",
+				"10.1016/j.supflu.2014.09.032",
+				"10.1016/j.ttbdis.2014.04.022",
+				"10.1016/j.apcata.2014.12.005",
+				"10.1016/j.foodres.2014.07.020",
+				"10.1016/j.jchromb.2014.09.040",
+				"10.1016/j.soilbio.2014.11.007",
+				"10.1016/j.agwat.2014.10.019",
+				"10.1016/j.cej.2014.06.112",
+				"10.1016/j.jedc.2014.09.014",
+				"10.1016/j.cej.2014.11.099",
+				"10.1016/j.foodchem.2014.09.161",
+				"10.1016/j.virep.2014.11.002",
+				"10.1016/j.jglr.2014.04.001",
+				"10.1016/j.fbp.2014.09.008",
+				"10.1016/j.virol.2014.11.017",
+				"10.1016/j.jff.2014.11.026",
+				"10.1016/j.mimet.2014.12.012",
+				"10.1016/j.theriogenology.2014.10.019",
+				"10.1016/j.catcom.2014.11.009",
+				"10.1016/j.bcab.2014.02.008",
+				"10.1016/j.biortech.2014.08.002",
+				"10.1016/j.livsci.2014.11.003",
+				"10.1016/j.scienta.2014.10.034",
+				"10.1016/j.cocis.2014.07.002",
+				"10.1016/j.marpolbul.2014.11.010",
+				"10.1016/j.aquaculture.2014.10.001",
+				"10.1016/j.ces.2014.03.001",
+				"10.1016/j.agee.2014.04.004",
+				"10.1016/j.jgg.2014.10.004",
+				"10.1016/j.supflu.2014.08.029",
+				"10.1016/j.carbpol.2014.06.053",
+				"10.1016/j.fm.2014.11.004",
+				"10.1016/j.bej.2014.09.009",
+				"10.1016/j.jhazmat.2014.08.038",
+				"10.1016/j.lwt.2014.08.042",
+				"10.1016/j.virol.2014.06.038",
+				"10.1016/j.biocontrol.2014.11.007",
+				"10.1016/j.aquaeng.2014.11.001",
+				"10.1016/j.ijfoodmicro.2014.08.005",
+				"10.1016/j.vetpar.2014.10.025",
+				"10.1016/j.foreco.2012.11.046",
+				"10.1016/j.apgeog.2014.07.011",
+				"10.1016/j.envsci.2014.10.004",
+				"10.1016/j.ijfoodmicro.2014.11.018",
+				"10.1016/j.algal.2014.09.005",
+				"10.1016/j.arr.2014.08.002",
+				"10.1016/j.agwat.2014.03.004",
+				"10.1016/j.dci.2014.12.006",
+				"10.1016/j.plantsci.2014.07.006",
+				"10.1016/j.cimid.2014.07.004",
+				"10.1016/j.foodres.2014.08.016",
+				"10.1016/j.vetpar.2014.07.013",
+				"10.1016/j.jglr.2014.05.001",
+				"10.1016/j.rse.2014.05.010",
+				"10.1016/j.jglr.2014.08.005",
+				"10.1016/j.apcatb.2014.08.034",
+				"10.1016/j.colsurfb.2014.11.015",
+				"10.1016/j.foodchem.2014.11.153",
+				"10.1016/j.foreco.2014.09.016",
+				"10.1016/j.gloplacha.2012.11.003",
+				"10.1016/j.scitotenv.2014.10.023",
+				"10.1016/j.indcrop.2014.10.005",
+				"10.1016/j.biocon.2014.06.014",
+				"10.1016/j.virusres.2014.07.030",
+				"10.1016/j.mimet.2014.06.002",
+				"10.1016/j.biombioe.2014.09.030",
+				"10.1016/j.bbagen.2014.10.014",
+				"10.1016/j.jbiomech.2014.09.033",
+				"10.1016/j.aquaeng.2014.10.010",
+				"10.1016/j.jembe.2014.08.004",
+				"10.1016/j.jff.2014.11.005",
+				"10.1016/j.jbiotec.2014.10.027",
+				"10.1016/j.jhazmat.2014.08.029",
+				"10.1016/j.funbio.2014.11.002",
+				"10.1016/j.coche.2014.09.005",
+				"10.1016/j.bbamcr.2014.11.020",
+				"10.1016/j.virol.2014.10.024",
+				"10.1016/j.ecoleng.2014.09.108",
+				"10.1016/j.fsi.2014.06.015",
+				"10.1016/j.agrformet.2014.10.017",
+				"10.1016/j.domaniend.2014.10.002",
+				"10.1016/j.jip.2014.11.006",
+				"10.1016/j.prevetmed.2014.08.017",
+				"10.1016/j.jinsphys.2014.11.001",
+				"10.1016/j.jfca.2014.06.004",
+				"10.1016/j.envpol.2014.11.018",
+				"10.1016/j.rse.2014.06.022",
+				"10.1016/j.scienta.2014.09.037",
+				"10.1016/j.childyouth.2014.09.014",
+				"10.1016/j.jhazmat.2014.06.074",
+				"10.1016/j.bcp.2014.09.027",
+				"10.1016/j.dci.2014.11.003",
+				"10.1016/j.cropro.2014.08.013",
+				"10.1016/j.ygcen.2014.04.034",
+				"10.1016/j.pbi.2014.05.015",
+				"10.1016/j.biortech.2014.09.006",
+				"10.1016/j.catena.2014.09.008",
+				"10.1016/j.biortech.2014.06.111",
+				"10.1016/j.geomorph.2014.03.009",
+				"10.1016/j.carbpol.2014.07.004",
+				"10.1016/j.mce.2014.09.007",
+				"10.1016/j.actbio.2014.10.019",
+				"10.1016/j.anireprosci.2014.05.017",
+				"10.1016/j.livsci.2014.06.005",
+				"10.1016/j.funeco.2014.03.001",
+				"10.1016/j.meegid.2014.09.025",
+				"10.1016/j.jviromet.2014.10.013",
+				"10.1016/j.jaap.2014.08.010",
+				"10.1016/j.bmcl.2014.10.051",
+				"10.1016/j.landusepol.2014.04.019",
+				"10.1016/j.foodcont.2014.10.037",
+				"10.1016/j.anireprosci.2014.10.018",
+				"10.1016/j.vaccine.2014.07.059",
+				"10.1016/j.prevetmed.2014.09.011",
+				"10.1016/j.vaccine.2014.10.005",
+				"10.1016/j.prevetmed.2014.11.001",
+				"10.1016/j.vetmic.2014.10.007",
+				"10.1016/j.jconhyd.2014.09.001",
+				"10.1016/j.foodchem.2014.06.082",
+				"10.1016/j.jag.2014.11.009",
+				"10.1016/j.jtbi.2014.08.018"
+			]
+		}
+	],
+	"_cursor" : {
+		"next" : function next() { [native code] },
+		"hasNext" : function hasNext() { [native code] },
+		"objsLeftInBatch" : function objsLeftInBatch() { [native code] },
+		"readOnly" : function readOnly() { [native code] }
+	},
+	"hasNext" : function () {
+    return this._firstBatch.length || this._cursor.hasNext();
+},
+	"next" : function () {
+    if (this._firstBatch.length) {
+        // $err wouldn't be in _firstBatch since ok was true.
+        return this._firstBatch.pop();
+    }
+    else {
+        var ret = this._cursor.next();
+        if ( ret.$err )
+            throw "error: " + tojson( ret );
+        return ret;
+    }
+},
+	"objsLeftInBatch" : function () {
+    if (this._firstBatch.length) {
+        return this._firstBatch.length;
+    }
+    else {
+        return this._cursor.objsLeftInBatch();
+    }
+},
+	"help" : function () {
+    // This is the same as the "Cursor Methods" section of DBQuery.help().
+    print("\nCursor methods");
+    print("\t.toArray() - iterates through docs and returns an array of the results")
+    print("\t.forEach( func )")
+    print("\t.map( func )")
+    print("\t.hasNext()")
+    print("\t.next()")
+    print("\t.objsLeftInBatch() - returns count of docs left in current batch (when exhausted, a new getMore will be issued)")
+    print("\t.itcount() - iterates through documents and counts them")
+    print("\t.pretty() - pretty print each document, possibly over multiple lines")
+},
+	"toArray" : function (){
+    if ( this._arr )
+        return this._arr;
+
+    var a = [];
+    while ( this.hasNext() )
+        a.push( this.next() );
+    this._arr = a;
+    return a;
+},
+	"forEach" : function ( func ){
+    while ( this.hasNext() )
+        func( this.next() );
+},
+	"map" : function ( func ){
+    var a = [];
+    while ( this.hasNext() )
+        a.push( func( this.next() ) );
+    return a;
+},
+	"itcount" : function (){
+    var num = 0;
+    while ( this.hasNext() ){
+        num++;
+        this.next();
+    }
+    return num;
+},
+	"shellPrint" : function (){
+    try {
+        var start = new Date().getTime();
+        var n = 0;
+        while ( this.hasNext() && n < DBQuery.shellBatchSize ){
+            var s = this._prettyShell ? tojson( this.next() ) : tojson( this.next() , "" , true );
+            print( s );
+            n++;
+        }
+        if (typeof _verboseShell !== 'undefined' && _verboseShell) {
+            var time = new Date().getTime() - start;
+            print("Fetched " + n + " record(s) in " + time + "ms");
+        }
+         if ( this.hasNext() ){
+            print( "Type \"it\" for more" );
+            ___it___  = this;
+        }
+        else {
+            ___it___  = null;
+        }
+   }
+    catch ( e ){
+        print( e );
+    }
+
+},
+	"pretty" : function (){
+    this._prettyShell = true;
+    return this;
+}
+}

@@ -1,4 +1,6 @@
-db.works.aggregate([ 
+
+printjson(
+ db.works.aggregate([ 
   { 
     '$match' : {  
        '$and': [ 
@@ -10,6 +12,7 @@ db.works.aggregate([
   { '$group': { 
   			_id:  { url: '$license.URL' },
   			DOIs: { '$addToSet': '$DOI' }
-  		} 
+    		} 
   }
- ]);
+ ])
+);

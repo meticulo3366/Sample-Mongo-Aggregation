@@ -1,2 +1,162 @@
 MongoDB shell version: 2.6.6
 connecting to: localhost:27017/agency-node-usdoi
+{
+	"_firstBatch" : [
+		{
+			"_id" : {
+				"url" : [
+					"http://www.elsevier.com/tdm/userlicense/1.0/"
+				]
+			},
+			"DOIs" : [
+				"10.1016/j.tpb.2014.11.004",
+				"10.1016/j.geomorph.2014.02.015",
+				"10.1016/j.gecco.2014.11.009",
+				"10.1016/j.chemgeo.2014.08.023",
+				"10.1016/j.yqres.2014.05.002",
+				"10.1016/j.scitotenv.2012.10.080",
+				"10.1016/j.precamres.2014.08.013",
+				"10.1016/j.envsoft.2014.08.006",
+				"10.1016/j.gca.2013.04.021",
+				"10.1016/j.rse.2014.06.012",
+				"10.1016/j.ecolmodel.2014.07.029",
+				"10.1016/j.rse.2012.10.028",
+				"10.1016/j.marpolbul.2013.03.001",
+				"10.1016/j.scitotenv.2013.01.021",
+				"10.1016/j.chemosphere.2014.10.050",
+				"10.1016/j.yqres.2014.03.005",
+				"10.1016/j.jglr.2014.11.009",
+				"10.1016/j.apgeog.2014.07.011",
+				"10.1016/j.marpetgeo.2014.06.018",
+				"10.1016/j.jenvman.2014.10.028",
+				"10.1016/j.autrev.2014.08.039",
+				"10.1016/j.apgeog.2014.08.014",
+				"10.1016/j.palaeo.2014.07.026",
+				"10.1016/j.pss.2014.03.005",
+				"10.1016/j.chemgeo.2014.10.020",
+				"10.1016/j.ejrh.2014.09.003",
+				"10.1016/j.jort.2014.09.009",
+				"10.1016/j.jmarsys.2014.08.012",
+				"10.1016/j.bcmd.2014.07.007",
+				"10.1016/j.jvolgeores.2014.02.018",
+				"10.1016/j.epsl.2014.08.031",
+				"10.1016/j.agrformet.2014.10.004",
+				"10.1016/j.jvolgeores.2014.02.016",
+				"10.1016/j.foreco.2012.10.048",
+				"10.1016/j.geomorph.2014.08.023",
+				"10.1016/j.envpol.2014.08.010",
+				"10.1016/j.geomorph.2014.10.023",
+				"10.1016/j.aquaculture.2014.06.005",
+				"10.1016/j.quascirev.2012.10.035",
+				"10.1016/j.geomorph.2014.08.028",
+				"10.1016/j.biocon.2014.11.020",
+				"10.1016/j.scitotenv.2014.10.032",
+				"10.1016/j.aeolia.2014.10.001",
+				"10.1016/j.lithos.2014.08.006",
+				"10.1016/j.epsl.2014.10.045",
+				"10.1016/j.scitotenv.2014.12.012",
+				"10.1016/j.rse.2014.08.001",
+				"10.1016/j.dsr2.2014.05.006"
+			]
+		}
+	],
+	"_cursor" : {
+		"next" : function next() { [native code] },
+		"hasNext" : function hasNext() { [native code] },
+		"objsLeftInBatch" : function objsLeftInBatch() { [native code] },
+		"readOnly" : function readOnly() { [native code] }
+	},
+	"hasNext" : function () {
+    return this._firstBatch.length || this._cursor.hasNext();
+},
+	"next" : function () {
+    if (this._firstBatch.length) {
+        // $err wouldn't be in _firstBatch since ok was true.
+        return this._firstBatch.pop();
+    }
+    else {
+        var ret = this._cursor.next();
+        if ( ret.$err )
+            throw "error: " + tojson( ret );
+        return ret;
+    }
+},
+	"objsLeftInBatch" : function () {
+    if (this._firstBatch.length) {
+        return this._firstBatch.length;
+    }
+    else {
+        return this._cursor.objsLeftInBatch();
+    }
+},
+	"help" : function () {
+    // This is the same as the "Cursor Methods" section of DBQuery.help().
+    print("\nCursor methods");
+    print("\t.toArray() - iterates through docs and returns an array of the results")
+    print("\t.forEach( func )")
+    print("\t.map( func )")
+    print("\t.hasNext()")
+    print("\t.next()")
+    print("\t.objsLeftInBatch() - returns count of docs left in current batch (when exhausted, a new getMore will be issued)")
+    print("\t.itcount() - iterates through documents and counts them")
+    print("\t.pretty() - pretty print each document, possibly over multiple lines")
+},
+	"toArray" : function (){
+    if ( this._arr )
+        return this._arr;
+
+    var a = [];
+    while ( this.hasNext() )
+        a.push( this.next() );
+    this._arr = a;
+    return a;
+},
+	"forEach" : function ( func ){
+    while ( this.hasNext() )
+        func( this.next() );
+},
+	"map" : function ( func ){
+    var a = [];
+    while ( this.hasNext() )
+        a.push( func( this.next() ) );
+    return a;
+},
+	"itcount" : function (){
+    var num = 0;
+    while ( this.hasNext() ){
+        num++;
+        this.next();
+    }
+    return num;
+},
+	"shellPrint" : function (){
+    try {
+        var start = new Date().getTime();
+        var n = 0;
+        while ( this.hasNext() && n < DBQuery.shellBatchSize ){
+            var s = this._prettyShell ? tojson( this.next() ) : tojson( this.next() , "" , true );
+            print( s );
+            n++;
+        }
+        if (typeof _verboseShell !== 'undefined' && _verboseShell) {
+            var time = new Date().getTime() - start;
+            print("Fetched " + n + " record(s) in " + time + "ms");
+        }
+         if ( this.hasNext() ){
+            print( "Type \"it\" for more" );
+            ___it___  = this;
+        }
+        else {
+            ___it___  = null;
+        }
+   }
+    catch ( e ){
+        print( e );
+    }
+
+},
+	"pretty" : function (){
+    this._prettyShell = true;
+    return this;
+}
+}

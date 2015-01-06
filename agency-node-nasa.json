@@ -1,2 +1,328 @@
 MongoDB shell version: 2.6.6
 connecting to: localhost:27017/agency-node-nasa
+{
+	"_firstBatch" : [
+		{
+			"_id" : {
+				"url" : [
+					"http://www.elsevier.com/tdm/userlicense/1.0/"
+				]
+			},
+			"DOIs" : [
+				"10.1016/j.jnoncrysol.2014.10.026",
+				"10.1016/j.rse.2013.11.024",
+				"10.1016/j.actaastro.2014.09.015",
+				"10.1016/j.lssr.2014.05.002",
+				"10.1016/j.grj.2014.06.001",
+				"10.1016/j.jfluidstructs.2014.09.008",
+				"10.1016/j.proci.2014.08.019",
+				"10.1016/j.icarus.2014.08.026",
+				"10.1016/j.matlet.2014.08.106",
+				"10.1016/j.lssr.2014.05.003",
+				"10.1016/j.icarus.2014.07.020",
+				"10.1016/j.combustflame.2014.10.004",
+				"10.1016/j.rse.2014.06.001",
+				"10.1016/j.pss.2014.10.012",
+				"10.1016/j.ijheatmasstransfer.2014.09.035",
+				"10.1016/j.icarus.2014.09.012",
+				"10.1016/j.icarus.2014.10.017",
+				"10.1016/j.rse.2014.03.030",
+				"10.1016/j.lssr.2014.05.004",
+				"10.1016/j.rse.2014.06.010",
+				"10.1016/j.newast.2014.06.004",
+				"10.1016/j.jvolgeores.2014.08.029",
+				"10.1016/j.geomorph.2014.08.026",
+				"10.1016/j.icarus.2014.10.002",
+				"10.1016/j.geomorph.2014.08.027",
+				"10.1016/j.actaastro.2014.07.037",
+				"10.1016/j.powtec.2014.08.003",
+				"10.1016/j.geomorph.2014.02.029",
+				"10.1016/j.jembe.2014.09.012",
+				"10.1016/j.biocel.2014.10.022",
+				"10.1016/j.cbpa.2014.09.013",
+				"10.1016/j.icarus.2014.08.009",
+				"10.1016/j.jheap.2014.09.001",
+				"10.1016/j.carbon.2014.08.010",
+				"10.1016/j.chemer.2014.08.003",
+				"10.1016/j.jastp.2014.06.007",
+				"10.1016/j.jvolgeores.2014.02.016",
+				"10.1016/j.pss.2014.09.007",
+				"10.1016/j.rse.2014.08.007",
+				"10.1016/j.rse.2013.07.044",
+				"10.1016/j.jqsrt.2014.07.022",
+				"10.1016/j.rse.2014.06.012",
+				"10.1016/j.foodqual.2014.08.001",
+				"10.1016/j.jbiomech.2014.07.005",
+				"10.1016/j.jqsrt.2014.09.015",
+				"10.1016/j.rse.2014.03.005",
+				"10.1016/j.agrformet.2014.09.015",
+				"10.1016/j.physletb.2014.07.042",
+				"10.1016/j.epsl.2014.09.044",
+				"10.1016/j.rse.2014.10.022",
+				"10.1016/j.pbi.2014.09.001",
+				"10.1016/j.epsl.2014.09.047",
+				"10.1016/j.ces.2014.07.053",
+				"10.1016/j.lssr.2014.09.003",
+				"10.1016/j.mimet.2014.10.007",
+				"10.1016/j.epsl.2014.07.037",
+				"10.1016/j.epsl.2014.10.025",
+				"10.1016/j.carbon.2014.12.033",
+				"10.1016/j.aop.2014.10.008",
+				"10.1016/j.isprsjprs.2014.09.004",
+				"10.1016/j.mechmachtheory.2014.08.008",
+				"10.1016/j.epsl.2014.10.029",
+				"10.1016/j.jcp.2014.07.053",
+				"10.1016/j.ijms.2014.08.023",
+				"10.1016/j.biocon.2014.07.004",
+				"10.1016/j.jqsrt.2014.05.019",
+				"10.1016/j.epsl.2014.09.015",
+				"10.1016/j.talanta.2014.09.013",
+				"10.1016/j.jhydrol.2014.09.010",
+				"10.1016/j.icarus.2014.06.033",
+				"10.1016/j.icarus.2014.06.028",
+				"10.1016/j.bone.2014.06.005",
+				"10.1016/j.envsci.2014.08.001",
+				"10.1016/j.physletb.2014.07.012",
+				"10.1016/j.pss.2014.07.013",
+				"10.1016/j.tre.2014.09.011",
+				"10.1016/j.rse.2014.08.022",
+				"10.1016/j.biortech.2014.07.105",
+				"10.1016/j.physrep.2014.10.004",
+				"10.1016/j.physc.2014.09.005",
+				"10.1016/j.neuroimage.2014.12.023",
+				"10.1016/j.nuclphysb.2014.11.009",
+				"10.1016/j.icarus.2014.09.047",
+				"10.1016/j.biocon.2012.07.026",
+				"10.1016/j.atmosres.2014.03.013",
+				"10.1016/j.icarus.2014.09.001",
+				"10.1016/j.icarus.2014.09.042",
+				"10.1016/j.micromeso.2014.09.017",
+				"10.1016/j.gr.2014.05.009",
+				"10.1016/j.ast.2014.07.013",
+				"10.1016/j.bone.2014.11.013",
+				"10.1016/j.epsl.2014.07.010",
+				"10.1016/j.lssr.2014.06.004",
+				"10.1016/j.icarus.2014.09.016",
+				"10.1016/j.gloplacha.2012.10.005",
+				"10.1016/j.rse.2014.11.024",
+				"10.1016/j.atmosres.2014.07.013",
+				"10.1016/j.icarus.2014.05.019",
+				"10.1016/j.flowmeasinst.2014.09.008",
+				"10.1016/j.actamat.2014.08.049",
+				"10.1016/j.gca.2014.09.008",
+				"10.1016/j.palaeo.2014.07.018",
+				"10.1016/j.epsl.2014.11.025",
+				"10.1016/j.adt.2014.03.002",
+				"10.1016/j.icarus.2014.10.028",
+				"10.1016/j.icarus.2014.08.044",
+				"10.1016/j.chemer.2014.09.001",
+				"10.1016/j.spa.2014.11.017",
+				"10.1016/j.asr.2014.11.020",
+				"10.1016/j.compscitech.2014.10.017",
+				"10.1016/j.landurbplan.2014.11.005",
+				"10.1016/j.atmosenv.2014.09.055",
+				"10.1016/j.icarus.2014.10.041",
+				"10.1016/j.pss.2014.11.015",
+				"10.1016/j.rse.2014.04.027",
+				"10.1016/j.actaastro.2014.10.010",
+				"10.1016/j.atmosenv.2014.12.010",
+				"10.1016/j.epsl.2014.04.014",
+				"10.1016/j.precamres.2014.11.026",
+				"10.1016/j.actaastro.2014.10.030",
+				"10.1016/j.rse.2014.08.019",
+				"10.1016/j.chemphys.2014.08.004",
+				"10.1016/j.apsusc.2014.11.129",
+				"10.1016/j.actaastro.2014.11.007",
+				"10.1016/j.foodres.2014.10.003",
+				"10.1016/j.epsl.2014.10.046",
+				"10.1016/j.grj.2014.11.002",
+				"10.1016/j.jqsrt.2014.05.013",
+				"10.1016/j.isprsjprs.2014.09.006",
+				"10.1016/j.gca.2014.06.008",
+				"10.1016/j.gca.2014.10.007",
+				"10.1016/j.lssr.2014.09.002",
+				"10.1016/j.pss.2014.11.026",
+				"10.1016/j.rse.2014.08.017",
+				"10.1016/j.physletb.2014.10.037",
+				"10.1016/j.apenergy.2014.08.034",
+				"10.1016/j.combustflame.2014.10.013",
+				"10.1016/j.agrformet.2014.06.013",
+				"10.1016/j.astropartphys.2014.11.003",
+				"10.1016/j.icarus.2014.04.011",
+				"10.1016/j.bios.2014.08.072",
+				"10.1016/j.landusepol.2014.08.004",
+				"10.1016/j.nima.2014.11.047",
+				"10.1016/j.jcp.2014.11.004",
+				"10.1016/j.gca.2014.11.002",
+				"10.1016/j.chemgeo.2014.11.014",
+				"10.1016/j.scriptamat.2014.10.019",
+				"10.1016/j.gloenvcha.2014.02.008",
+				"10.1016/j.jnoncrysol.2014.11.030",
+				"10.1016/j.icarus.2014.03.014",
+				"10.1016/j.gca.2014.10.016",
+				"10.1016/j.lssr.2014.11.002",
+				"10.1016/j.epsl.2014.11.014",
+				"10.1016/j.paerosci.2014.09.008",
+				"10.1016/j.rse.2014.07.001",
+				"10.1016/j.epsl.2014.08.017",
+				"10.1016/j.ascom.2014.07.004",
+				"10.1016/j.agrformet.2014.10.009",
+				"10.1016/j.lssr.2014.09.004",
+				"10.1016/j.jhydrol.2014.07.008",
+				"10.1016/j.ijheatmasstransfer.2014.09.017",
+				"10.1016/j.icarus.2014.08.041",
+				"10.1016/j.rse.2014.08.011",
+				"10.1016/j.colsurfa.2014.10.018",
+				"10.1016/j.chemgeo.2014.06.018",
+				"10.1016/j.gca.2014.08.017",
+				"10.1016/j.jcp.2014.10.007",
+				"10.1016/j.ygeno.2014.10.011",
+				"10.1016/j.epsl.2014.11.022",
+				"10.1016/j.rse.2013.10.036",
+				"10.1016/j.cej.2014.09.037",
+				"10.1016/j.geomorph.2014.10.012",
+				"10.1016/j.gca.2014.09.004",
+				"10.1016/j.jqsrt.2014.11.011",
+				"10.1016/j.jastp.2014.11.006",
+				"10.1016/j.jbiomech.2014.07.031",
+				"10.1016/j.icarus.2014.07.021",
+				"10.1016/j.jcp.2014.10.057",
+				"10.1016/j.icarus.2014.08.035",
+				"10.1016/j.rse.2014.06.022",
+				"10.1016/j.epsl.2014.10.053",
+				"10.1016/j.str.2011.06.008",
+				"10.1016/j.epsl.2014.11.020",
+				"10.1016/j.nima.2014.06.016",
+				"10.1016/j.firesaf.2014.11.007",
+				"10.1016/j.icarus.2014.05.014",
+				"10.1016/j.icarus.2014.11.009",
+				"10.1016/j.jqsrt.2014.09.014",
+				"10.1016/j.epsl.2014.11.023",
+				"10.1016/j.nima.2014.11.099",
+				"10.1016/j.icarus.2014.10.026",
+				"10.1016/j.geothermics.2014.09.002",
+				"10.1016/j.epsl.2014.09.024",
+				"10.1016/j.icarus.2014.03.007",
+				"10.1016/j.icarus.2014.10.033",
+				"10.1016/j.rse.2014.08.038",
+				"10.1016/j.cageo.2014.11.003",
+				"10.1016/j.jqsrt.2014.09.016",
+				"10.1016/j.epsl.2014.07.014",
+				"10.1016/j.actaastro.2014.11.025",
+				"10.1016/j.epsl.2014.08.039",
+				"10.1016/j.newast.2014.11.002",
+				"10.1016/j.epsl.2014.04.007",
+				"10.1016/j.pss.2014.07.009",
+				"10.1016/j.agrformet.2014.10.004",
+				"10.1016/j.atmosres.2014.07.032",
+				"10.1016/j.rse.2014.10.031",
+				"10.1016/j.rse.2014.07.009",
+				"10.1016/j.ijheatmasstransfer.2014.10.052",
+				"10.1016/j.ijheatmasstransfer.2014.10.049",
+				"10.1016/j.epsl.2014.11.018",
+				"10.1016/j.physletb.2014.10.064",
+				"10.1016/j.icarus.2014.11.025",
+				"10.1016/j.pss.2014.11.001"
+			]
+		}
+	],
+	"_cursor" : {
+		"next" : function next() { [native code] },
+		"hasNext" : function hasNext() { [native code] },
+		"objsLeftInBatch" : function objsLeftInBatch() { [native code] },
+		"readOnly" : function readOnly() { [native code] }
+	},
+	"hasNext" : function () {
+    return this._firstBatch.length || this._cursor.hasNext();
+},
+	"next" : function () {
+    if (this._firstBatch.length) {
+        // $err wouldn't be in _firstBatch since ok was true.
+        return this._firstBatch.pop();
+    }
+    else {
+        var ret = this._cursor.next();
+        if ( ret.$err )
+            throw "error: " + tojson( ret );
+        return ret;
+    }
+},
+	"objsLeftInBatch" : function () {
+    if (this._firstBatch.length) {
+        return this._firstBatch.length;
+    }
+    else {
+        return this._cursor.objsLeftInBatch();
+    }
+},
+	"help" : function () {
+    // This is the same as the "Cursor Methods" section of DBQuery.help().
+    print("\nCursor methods");
+    print("\t.toArray() - iterates through docs and returns an array of the results")
+    print("\t.forEach( func )")
+    print("\t.map( func )")
+    print("\t.hasNext()")
+    print("\t.next()")
+    print("\t.objsLeftInBatch() - returns count of docs left in current batch (when exhausted, a new getMore will be issued)")
+    print("\t.itcount() - iterates through documents and counts them")
+    print("\t.pretty() - pretty print each document, possibly over multiple lines")
+},
+	"toArray" : function (){
+    if ( this._arr )
+        return this._arr;
+
+    var a = [];
+    while ( this.hasNext() )
+        a.push( this.next() );
+    this._arr = a;
+    return a;
+},
+	"forEach" : function ( func ){
+    while ( this.hasNext() )
+        func( this.next() );
+},
+	"map" : function ( func ){
+    var a = [];
+    while ( this.hasNext() )
+        a.push( func( this.next() ) );
+    return a;
+},
+	"itcount" : function (){
+    var num = 0;
+    while ( this.hasNext() ){
+        num++;
+        this.next();
+    }
+    return num;
+},
+	"shellPrint" : function (){
+    try {
+        var start = new Date().getTime();
+        var n = 0;
+        while ( this.hasNext() && n < DBQuery.shellBatchSize ){
+            var s = this._prettyShell ? tojson( this.next() ) : tojson( this.next() , "" , true );
+            print( s );
+            n++;
+        }
+        if (typeof _verboseShell !== 'undefined' && _verboseShell) {
+            var time = new Date().getTime() - start;
+            print("Fetched " + n + " record(s) in " + time + "ms");
+        }
+         if ( this.hasNext() ){
+            print( "Type \"it\" for more" );
+            ___it___  = this;
+        }
+        else {
+            ___it___  = null;
+        }
+   }
+    catch ( e ){
+        print( e );
+    }
+
+},
+	"pretty" : function (){
+    this._prettyShell = true;
+    return this;
+}
+}

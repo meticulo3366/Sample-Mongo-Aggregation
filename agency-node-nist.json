@@ -1,2 +1,133 @@
 MongoDB shell version: 2.6.6
 connecting to: localhost:27017/agency-node-nist
+{
+	"_firstBatch" : [
+		{
+			"_id" : {
+				"url" : [
+					"http://www.elsevier.com/tdm/userlicense/1.0/"
+				]
+			},
+			"DOIs" : [
+				"10.1016/j.jhazmat.2014.09.050",
+				"10.1016/j.cocis.2014.10.006",
+				"10.1016/j.actbio.2014.11.047",
+				"10.1016/j.cryobiol.2014.09.004",
+				"10.1016/j.cocis.2014.10.002",
+				"10.1016/j.jsv.2014.07.004",
+				"10.1016/j.ijmachtools.2014.07.007",
+				"10.1016/j.compstruc.2014.11.003",
+				"10.1016/j.aca.2014.10.025",
+				"10.1016/j.ultramic.2014.11.023",
+				"10.1016/j.enbuild.2014.10.020",
+				"10.1016/j.susc.2014.06.002",
+				"10.1016/j.atmosenv.2014.09.073",
+				"10.1016/j.jhazmat.2014.09.048",
+				"10.1016/j.jqsrt.2014.10.020",
+				"10.1016/j.colsurfa.2014.10.061",
+				"10.1016/j.dental.2014.09.006",
+				"10.1016/j.buildenv.2014.05.025",
+				"10.1016/j.jcsr.2014.10.001"
+			]
+		}
+	],
+	"_cursor" : {
+		"next" : function next() { [native code] },
+		"hasNext" : function hasNext() { [native code] },
+		"objsLeftInBatch" : function objsLeftInBatch() { [native code] },
+		"readOnly" : function readOnly() { [native code] }
+	},
+	"hasNext" : function () {
+    return this._firstBatch.length || this._cursor.hasNext();
+},
+	"next" : function () {
+    if (this._firstBatch.length) {
+        // $err wouldn't be in _firstBatch since ok was true.
+        return this._firstBatch.pop();
+    }
+    else {
+        var ret = this._cursor.next();
+        if ( ret.$err )
+            throw "error: " + tojson( ret );
+        return ret;
+    }
+},
+	"objsLeftInBatch" : function () {
+    if (this._firstBatch.length) {
+        return this._firstBatch.length;
+    }
+    else {
+        return this._cursor.objsLeftInBatch();
+    }
+},
+	"help" : function () {
+    // This is the same as the "Cursor Methods" section of DBQuery.help().
+    print("\nCursor methods");
+    print("\t.toArray() - iterates through docs and returns an array of the results")
+    print("\t.forEach( func )")
+    print("\t.map( func )")
+    print("\t.hasNext()")
+    print("\t.next()")
+    print("\t.objsLeftInBatch() - returns count of docs left in current batch (when exhausted, a new getMore will be issued)")
+    print("\t.itcount() - iterates through documents and counts them")
+    print("\t.pretty() - pretty print each document, possibly over multiple lines")
+},
+	"toArray" : function (){
+    if ( this._arr )
+        return this._arr;
+
+    var a = [];
+    while ( this.hasNext() )
+        a.push( this.next() );
+    this._arr = a;
+    return a;
+},
+	"forEach" : function ( func ){
+    while ( this.hasNext() )
+        func( this.next() );
+},
+	"map" : function ( func ){
+    var a = [];
+    while ( this.hasNext() )
+        a.push( func( this.next() ) );
+    return a;
+},
+	"itcount" : function (){
+    var num = 0;
+    while ( this.hasNext() ){
+        num++;
+        this.next();
+    }
+    return num;
+},
+	"shellPrint" : function (){
+    try {
+        var start = new Date().getTime();
+        var n = 0;
+        while ( this.hasNext() && n < DBQuery.shellBatchSize ){
+            var s = this._prettyShell ? tojson( this.next() ) : tojson( this.next() , "" , true );
+            print( s );
+            n++;
+        }
+        if (typeof _verboseShell !== 'undefined' && _verboseShell) {
+            var time = new Date().getTime() - start;
+            print("Fetched " + n + " record(s) in " + time + "ms");
+        }
+         if ( this.hasNext() ){
+            print( "Type \"it\" for more" );
+            ___it___  = this;
+        }
+        else {
+            ___it___  = null;
+        }
+   }
+    catch ( e ){
+        print( e );
+    }
+
+},
+	"pretty" : function (){
+    this._prettyShell = true;
+    return this;
+}
+}
